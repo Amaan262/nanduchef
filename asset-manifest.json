@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nanduchef/static/css/main.a6d1a849.css",
+    "main.js": "/nanduchef/static/js/main.782507fe.js",
+    "static/media/nanduchefRound.png": "/nanduchef/static/media/nanduchefRound.6982d1d7d43d207a8985.png",
+    "index.html": "/nanduchef/index.html",
+    "main.a6d1a849.css.map": "/nanduchef/static/css/main.a6d1a849.css.map",
+    "main.782507fe.js.map": "/nanduchef/static/js/main.782507fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6d1a849.css",
+    "static/js/main.782507fe.js"
+  ]
+}
