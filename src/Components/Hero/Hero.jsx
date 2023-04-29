@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import "./hero.scss";
 
 const hero = () => {
   return (
-    <div>hero</div>
-  )
-}
+    <div className="hero">
+      <h1>hero</h1>
+    </div>
+  );
+};
 
-export default hero
+export default hero;

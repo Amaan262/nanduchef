@@ -1,7 +1,7 @@
 @use './scss/' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Montserrat:wght@200;400;500;600;800;900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -23,7 +23,6 @@ html {
 
 body{
   font-family: $font-family;
-  font-weight: 400;
   line-height: 1.5;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

@@ -25,7 +25,7 @@ const navItems = [
     url: "/",
   },
   {
-    title: "Wholesale Enguiry",
+    title: "Wholesale Enquiry",
     url: "/",
   },
 ];
