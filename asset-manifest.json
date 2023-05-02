@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/nanduchef/static/css/main.c94ca7da.css",
-    "main.js": "/nanduchef/static/js/main.8aab6111.js",
+    "main.css": "/nanduchef/static/css/main.cdcf387f.css",
+    "main.js": "/nanduchef/static/js/main.d2f5919f.js",
+    "static/media/2.jpg": "/nanduchef/static/media/2.fda83e85f3e9dd557edd.jpg",
+    "static/media/1.jpg": "/nanduchef/static/media/1.e99b59ff05d719e8b185.jpg",
+    "static/media/about3.jpg": "/nanduchef/static/media/about3.ab5c33bdbeacd010c1d7.jpg",
+    "static/media/about1.jpg": "/nanduchef/static/media/about1.5007514d7ba9dca732e7.jpg",
     "static/media/nanduchefRound.png": "/nanduchef/static/media/nanduchefRound.6982d1d7d43d207a8985.png",
+    "static/media/about2.jpg": "/nanduchef/static/media/about2.ebd76926a62c6eb7e9ab.jpg",
     "index.html": "/nanduchef/index.html",
-    "main.c94ca7da.css.map": "/nanduchef/static/css/main.c94ca7da.css.map",
-    "main.8aab6111.js.map": "/nanduchef/static/js/main.8aab6111.js.map"
+    "main.cdcf387f.css.map": "/nanduchef/static/css/main.cdcf387f.css.map",
+    "main.d2f5919f.js.map": "/nanduchef/static/js/main.d2f5919f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c94ca7da.css",
-    "static/js/main.8aab6111.js"
+    "static/css/main.cdcf387f.css",
+    "static/js/main.d2f5919f.js"
   ]
 }
