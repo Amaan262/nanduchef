@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nanduchef/static/css/main.cdcf387f.css",
+    "main.css": "/nanduchef/static/css/main.2605cffb.css",
     "main.js": "/nanduchef/static/js/main.d2f5919f.js",
     "static/media/2.jpg": "/nanduchef/static/media/2.fda83e85f3e9dd557edd.jpg",
     "static/media/1.jpg": "/nanduchef/static/media/1.e99b59ff05d719e8b185.jpg",
@@ -9,11 +9,11 @@
     "static/media/nanduchefRound.png": "/nanduchef/static/media/nanduchefRound.6982d1d7d43d207a8985.png",
     "static/media/about2.jpg": "/nanduchef/static/media/about2.ebd76926a62c6eb7e9ab.jpg",
     "index.html": "/nanduchef/index.html",
-    "main.cdcf387f.css.map": "/nanduchef/static/css/main.cdcf387f.css.map",
+    "main.2605cffb.css.map": "/nanduchef/static/css/main.2605cffb.css.map",
     "main.d2f5919f.js.map": "/nanduchef/static/js/main.d2f5919f.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdcf387f.css",
+    "static/css/main.2605cffb.css",
     "static/js/main.d2f5919f.js"
   ]
 }
