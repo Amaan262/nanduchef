@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// Usme dropdown me breads, cakes, pastries, velvet cups, muffins vagera dalenge snacks
+// sme Dropdown me Pulses, Dry Fruits, Spices add karna hai
+
 const navItems = [
   {
     title: "Home",
@@ -6,27 +10,75 @@ const navItems = [
   },
   {
     title: "About Us",
-    url: "/",
+    url: "/About",
   },
   {
     title: "Confectionery",
-    url: "/",
+    url: "/confectionery",
   },
   {
     title: "Bakery Biscuits",
-    url: "/",
+    url: "/bakeryBiscuits",
+  },
+  {
+    title: "Live Bakery",
+    url: "/liveBakery/breads",
+    submenu: [
+      {
+        title: "Breads",
+        url: "breads",
+      },
+      {
+        title: "cakes",
+        url: "cakes",
+      },
+      {
+        title: "pastries",
+        url: "pastries",
+      },
+      {
+        title: "velvet cups",
+        url: "velvetCups",
+      },
+      {
+        title: "muffins",
+        url: "muffins",
+      },
+      {
+        title: "snacks",
+        url: "snacks",
+      },
+    ],
+  },
+  {
+    title: "Grocery",
+    url: "/grocery",
+    submenu: [
+      {
+        title: "Pulses",
+        url: "pulses",
+      },
+      {
+        title: "Dry Fruits",
+        url: "dryFruits",
+      },
+      {
+        title: "Spices",
+        url: "spices",
+      },
+    ],
   },
   {
     title: "Go for Wheat!",
-    url: "/",
+    url: "/goForWheat",
   },
   {
     title: "Contact Us",
-    url: "/",
+    url: "/contact",
   },
   {
     title: "Wholesale Enquiry",
-    url: "/",
+    url: "/wholesaleEnquiry",
   },
 ];
 
@@ -37,7 +89,7 @@ const Navbar = () => {
         {navItems.map((item, index) => {
           return (
             <li className="nav-items" key={index}>
-              <a href={item.url}>{item.title}</a>
+              <Link to={item.url}>{item.title}</Link>
             </li>
           );
         })}

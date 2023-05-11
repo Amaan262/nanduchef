@@ -1,0 +1,80 @@
+@use './scss/' as *;
+
+
+.findstore {
+    min-height: 80vh;
+    flex-direction: row;
+    padding: 3.5rem;
+
+
+    .container {
+        @include mobile {
+            flex-direction: column-reverse;
+            background-color: pink;
+        }
+
+        @include flex(none, none);
+        // background-color: $main-color2;
+        // flex: 1 1 20rem;
+
+        .mapinfo {
+            position: relative;
+            color: white;
+            padding: 2rem;
+            min-width: 50%;
+            display: flex;
+            // align-items: flex-end;
+            color: black;
+            h2 {
+                font-size: 2.5rem;
+                // color: white;
+
+            }
+
+            span {
+                font-size: 1.5rem;
+                // color: white;
+                font-weight: 500;
+            }
+
+            &::after {
+                content: "";
+                opacity: 0.4;
+                background: rgb(26, 31, 41) url("../../images/1.jpg") no-repeat fixed top;
+                // background-blend-mode: luminosity;
+                /* also change the blend mode to what suits you, from darken, to other 
+                many options as you deem fit*/
+                background-size: cover;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                // height: 100%;
+                position: absolute;
+                z-index: -1;
+                // height: 500px;
+            }
+
+        }
+
+        .map {
+            // border: 3px solid red;
+            width: 100%;
+            min-height: 65vh;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+
+                @include mobile {
+                    // position: relative;
+                    
+
+                }
+            }
+
+        }
+    }
+
+
+}

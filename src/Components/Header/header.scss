@@ -3,6 +3,7 @@
 .page_header {
     padding: 0 2%;
     background-color: white;
+
     .header_content {
         padding: 5px 1%;
         min-height: 65px;
@@ -39,7 +40,8 @@
                 outline: none;
                 background-color: white;
                 padding-right: 10px;
-                .icon{
+
+                .icon {
                     font-size: 22px;
                     color: $main-color2;
                 }
@@ -49,39 +51,46 @@
         .quick_links {
             @include flex(center, center);
             gap: 20px;
-        font-family: $font-family2;
+            font-family: $font-family2;
 
             color: $main-color2;
             font-weight: bold;
+            span{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
             a {
                 @include flex(center, center);
                 gap: 10px;
 
                 align-self: center;
-                
-                svg{
+
+                svg {
                     font-size: 20px;
                 }
             }
         }
     }
 
-    .header-nav{
+    .header-nav {
         // background-color: $main-color2;
         padding: 10px;
 
         font-family: $font-family2;
-        
-        ul{
-            @include flex(center,center);
+
+        ul {
+            @include flex(center, center);
             flex-direction: row;
             gap: 40px;
             font-size: 18px;
             color: $main-color2;
             font-weight: bold;
-            li{
+
+            li {
                 padding: 2px 4px;
-                &:hover{
+
+                &:hover {
                     color: $hover-font;
                 }
             }

@@ -52,11 +52,23 @@
             }
 
             .social {
-
+                .contactInfo{
+                    p{
+                        padding-bottom: 10px;
+                        font-weight: 450;
+                    }
+                }
                 .share {
-                    // display: flex;
+                    @include flex(center, none);
                     flex-wrap: wrap;
                     padding: 1rem 0;
+
+                    
+
+                    p {
+                        text-align: center;
+                        padding-top: 6px;
+                    }
 
                     a {
                         height: 3rem;
@@ -66,21 +78,35 @@
                         text-align: center;
                         border-radius: 5rem;
                         font-size: 1.7rem;
-                        margin-right: 1rem;
+                        margin: 0 1rem;
                         transition: 0.2s;
                         // background: rgb(230, 230, 230);
                         color: #02094b;
                         border: none;
 
-                        // background-color: ;
+
+
+                    }
+
+                    .insta {
                         &:hover {
+
                             background: transparent;
                             transform: scale(0.98);
                             border: 0.1rem solid #c13584;
-                            background-color: #c13584;
-                            color: white;
-                            transition: ease-in-out 0.2s;
-                            // border: 0.1rem solid red;
+                            color: #c13584;
+                            background-color: $main-color;
+                            transition: ease-in 0.1s;
+                        }
+
+                    }
+
+                    .fb {
+                        &:hover {
+                            
+                            border: 0.1rem solid rgb(41, 41, 209);
+                            color: rgb(41, 41, 209);
+                            background-color: $main-color;
                         }
                     }
 
@@ -104,7 +130,7 @@
         color: rgba(255, 255, 255, 0.829);
         @include flex(center, space-between);
         flex-direction: column;
-        
+
         span {
             a {
                 // text-decoration: underline;
@@ -112,7 +138,8 @@
                 color: $main-color2;
                 
                 &:hover {
-                    color: $light-blue;
+                    color: lightcoral;
+                    border-bottom: 1px solid lightcoral;
                 }
             }
         }

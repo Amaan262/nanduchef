@@ -4,12 +4,13 @@ import logo from "../../images/nanduchefRound.png";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GoLocation } from "react-icons/go";
-const Header_content = () => {
+import { Link } from "react-router-dom";
+const HeaderContent = () => {
   return (
     <div className="header_content">
-      <div className="logo">
+      <a className="logo" href="/nanduchef">
         <img src={logo} alt="nandu-chef" />
-      </div>
+      </a>
       <div className="search_box">
         <input type="text" placeholder="Search" />
         <button>
@@ -20,21 +21,21 @@ const Header_content = () => {
         </button>
       </div>
       <div className="quick_links">
-        <a href="#">
+        <Link to="/findStore">
           <span>Find Our Store</span>
           {/* <FontAwesomeIcon icon="fa-solid fa-location-dot" />{" "} */}
-          <GoLocation/>
-        </a>
-        <a href="#">
+          <GoLocation />
+        </Link>
+        <Link to="#">
           <FontAwesomeIcon icon="fa-regular fa-user" />
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="#">
           <FontAwesomeIcon icon="fa-regular fa-heart" />
-        </a>
-        <a href="#">{/* <img src={shopping} alt="" /> */}</a>
+        </Link>
+        <Link to="#">{/* <img src={shopping} alt="" /> */}</Link>
       </div>
     </div>
   );
 };
 
-export default Header_content;
+export default HeaderContent;

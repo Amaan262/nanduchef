@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Header_content from "./Header_content";
+import HeaderContent from "./HeaderContent";
 
 const Header = () => {
   return (
     <header className="page_header">
-      <Header_content/>
+      <HeaderContent/>
       <Navbar />
     </header>
   );
