@@ -1,0 +1,28 @@
+@use '/scss/' as *;
+
+.products_container {
+    width: 100vw;
+    // padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 2rem;
+        background-color: $main-color3;
+        padding: 20px 0; 
+        font-weight: 600;
+        color: $premium;
+        text-align: center;
+    }
+
+    .products_wrapper {
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+}

@@ -1,0 +1,133 @@
+@use '/scss/' as *;
+.cart_container {
+    .cart_wrapper {
+        width: 100%;
+        padding: 2s0px;
+        .title {
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            a {
+                border: none;
+                padding: 10px;
+                color: white;
+                cursor: pointer;
+                font-weight: 600;
+                background-color: $premium;
+
+            }
+
+            .topTexts {
+                text-decoration: underline;
+                display: flex;
+                cursor: pointer;
+                gap: 30px;
+                margin: 0 10px;
+
+            }
+            .unfilled{
+                background-color: transparent;
+                color: black;
+                border: 2px $premium solid;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .info {
+                flex: 3;
+                hr{
+                    background-color: #eee;
+                    border: none;
+                    height: 1px;
+                }
+                .product{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px;
+                    .productDetail{
+                        flex: 2;
+                        display: flex;
+                        font-weight: 600;
+                        font-size: 18px;
+                        img{
+                            width: 200px;
+                        } 
+                        .details{
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;    
+                        }
+                    }
+                    
+                    .priceDetail{
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center; 
+                        flex-direction: column;
+                     
+                        .productAmountContainer{
+                            display: flex;
+                            align-items: center;
+                            border: $premium 2px solid;
+                            margin-bottom: 20px;
+                            .productAmount{
+                                font-size: 24px;
+                                margin: 5px;
+                                font-weight: 600;
+                            }
+                            svg{
+                                cursor: pointer;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                                &:hover{
+                                    border: $premium solid 1px;
+                                    background-color: #eee;
+                                }
+                            }
+                        
+                        }
+                        .productPrice{
+                            font-size: 30px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+
+            .summary {
+                flex: 1;
+                border: 0.5px solid lightgray;
+                border-radius: 10px;
+                padding: 20px;
+                height: inherit;
+                .summaryTitle{
+                    font-size: 24px;
+                    font-weight: 200;
+                    margin-bottom: 20px;
+                }
+             button{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $premium;
+                    color: white;
+                    font-weight: 600;
+                    border: none;
+                    cursor: pointer;
+             }
+            }
+        }
+    }
+}

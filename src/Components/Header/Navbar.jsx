@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.scss";
 // Usme dropdown me breads, cakes, pastries, velvet cups, muffins vagera dalenge snacks
 // sme Dropdown me Pulses, Dry Fruits, Spices add karna hai
 
 const navItems = [
   {
     title: "Home",
-    url: "/",
+    url: "/nanduchef",
   },
-  {
-    title: "About Us",
-    url: "/About",
-  },
+  
   {
     title: "Confectionery",
     url: "/confectionery",
@@ -22,7 +20,7 @@ const navItems = [
   },
   {
     title: "Live Bakery",
-    url: "/liveBakery/breads",
+    url: "/liveBakery",
     submenu: [
       {
         title: "Breads",
@@ -75,6 +73,10 @@ const navItems = [
   {
     title: "Contact Us",
     url: "/contact",
+  },
+  {
+    title: "About Us",
+    url: "/About",
   },
   {
     title: "Wholesale Enquiry",

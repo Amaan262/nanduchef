@@ -1,10 +1,10 @@
 import React from "react";
-// import logo from "../../images/NanduChef.png";
-import logo from "../../images/nanduchefRound.png";
+import './HeaderContent.scss'
+import logo from "../../Images/nanduchefRound.png";
 import "./header.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GoLocation } from "react-icons/go";
 import { Link } from "react-router-dom";
+import { FavoriteBorderSharp, PersonSharp, RoomSharp, Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Badge } from "@material-ui/core";
 const HeaderContent = () => {
   return (
     <div className="header_content">
@@ -14,25 +14,25 @@ const HeaderContent = () => {
       <div className="search_box">
         <input type="text" placeholder="Search" />
         <button>
-          <FontAwesomeIcon
-            className="icon"
-            icon="fa-solid fa-magnifying-glass"
-          />
+          <Search />
         </button>
       </div>
       <div className="quick_links">
         <Link to="/findStore">
           <span>Find Our Store</span>
-          {/* <FontAwesomeIcon icon="fa-solid fa-location-dot" />{" "} */}
-          <GoLocation />
+          <RoomSharp />
+        </Link>
+        <Link to="#/">
+          <PersonSharp />
         </Link>
         <Link to="#">
-          <FontAwesomeIcon icon="fa-regular fa-user" />
+          <FavoriteBorderSharp />
         </Link>
-        <Link to="#">
-          <FontAwesomeIcon icon="fa-regular fa-heart" />
+        <Link to="/cart">
+          <Badge badgeContent={4} color="secondary" overlap="rectangular">
+            <ShoppingCartOutlined />
+          </Badge>
         </Link>
-        <Link to="#">{/* <img src={shopping} alt="" /> */}</Link>
       </div>
     </div>
   );
