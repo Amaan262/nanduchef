@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/nanduchef/static/css/main.d01249f0.css",
-    "main.js": "/nanduchef/static/js/main.1e3c60b1.js",
-    "static/media/2.jpg": "/nanduchef/static/media/2.fda83e85f3e9dd557edd.jpg",
+    "main.css": "/nanduchef/static/css/main.4ff7e4f8.css",
+    "main.js": "/nanduchef/static/js/main.be8a8e94.js",
     "static/media/loginImg.jpg": "/nanduchef/static/media/loginImg.c40fc64f542c7351cb3b.jpg",
     "static/media/1.jpg": "/nanduchef/static/media/1.e99b59ff05d719e8b185.jpg",
+    "static/media/n2.jpg": "/nanduchef/static/media/n2.30d2b044a927b31d0b0b.jpg",
     "static/media/about3.jpg": "/nanduchef/static/media/about3.ab5c33bdbeacd010c1d7.jpg",
     "static/media/about1.jpg": "/nanduchef/static/media/about1.5007514d7ba9dca732e7.jpg",
+    "static/media/s1.jpg": "/nanduchef/static/media/s1.02dbbac59e0115862f52.jpg",
+    "static/media/n4.jpg": "/nanduchef/static/media/n4.a6d0e081c16570dea2ee.jpg",
+    "static/media/n6.jpg": "/nanduchef/static/media/n6.9de02bdffc48e8c4e6b6.jpg",
+    "static/media/n5.jpg": "/nanduchef/static/media/n5.b6db18c9fdb792b72d7a.jpg",
+    "static/media/s2.jpg": "/nanduchef/static/media/s2.e0fccb9c7951c68777fd.jpg",
+    "static/media/n7.jpg": "/nanduchef/static/media/n7.64732e5a9420ffa37f11.jpg",
+    "static/media/n3.jpg": "/nanduchef/static/media/n3.0a6b63c106cc0200527a.jpg",
+    "static/media/n1.jpg": "/nanduchef/static/media/n1.3d4832ec9cb5b780da20.jpg",
     "static/media/nanduchefRound.png": "/nanduchef/static/media/nanduchefRound.6982d1d7d43d207a8985.png",
     "static/media/about2.jpg": "/nanduchef/static/media/about2.ebd76926a62c6eb7e9ab.jpg",
     "index.html": "/nanduchef/index.html",
-    "main.d01249f0.css.map": "/nanduchef/static/css/main.d01249f0.css.map",
-    "main.1e3c60b1.js.map": "/nanduchef/static/js/main.1e3c60b1.js.map"
+    "main.4ff7e4f8.css.map": "/nanduchef/static/css/main.4ff7e4f8.css.map",
+    "main.be8a8e94.js.map": "/nanduchef/static/js/main.be8a8e94.js.map"
   },
   "entrypoints": [
-    "static/css/main.d01249f0.css",
-    "static/js/main.1e3c60b1.js"
+    "static/css/main.4ff7e4f8.css",
+    "static/js/main.be8a8e94.js"
   ]
 }
