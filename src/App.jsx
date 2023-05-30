@@ -16,19 +16,19 @@ import BakeryBiscuit from "./Pages/BakeryBiscuits/BakeryBiscuits";
 import LiveBakery from "./Pages/LiveBakery/LiveBakery";
 import GoForWheat from "./Pages/GoForWheat/GoForWheat";
 import Grocery from "./Pages/Grocery/Grocery";
-import WholesaleEnquiry from "./Pages/WholesaleEnquiry/WholesaleEnquiry";
 import FindStore from "./Pages/FindStore/FindStore";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Home from "./Pages/Home/Home";
 import Cart from "./Pages/Cart/Cart";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage.jsx";
+import Search from "./Components/Search/Search";
 function App() {
   return (
     <>
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/nanduchef" element={<Home />} />
         <Route path="/findStore" element={<FindStore />} />
         <Route path="/about" element={<About />} />
         <Route path="/confectionery" element={<Confectionery />} />
@@ -37,11 +37,13 @@ function App() {
         <Route path="/grocery" element={<Grocery />} />
         <Route path="/goForWheat" element={<GoForWheat />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/wholesaleEnquiry" element={<WholesaleEnquiry />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/search" element={<Search/>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
+      {/* <Search /> */}
       <Footer />
       {/* <Register /> */}
 

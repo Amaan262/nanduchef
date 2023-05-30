@@ -7,17 +7,14 @@ import "./Navbar.scss";
 const navItems = [
   {
     title: "Home",
-    url: "/nanduchef",
+    url: "/",
   },
   
   {
     title: "Confectionery",
     url: "/confectionery",
   },
-  {
-    title: "Bakery Biscuits",
-    url: "/bakeryBiscuits",
-  },
+  
   {
     title: "Live Bakery",
     url: "/liveBakery",
@@ -49,8 +46,12 @@ const navItems = [
     ],
   },
   {
+    title: "Bakery Biscuits",
+    // url: "/bakeryBiscuits",
+  },
+  {
     title: "Grocery",
-    url: "/grocery",
+    // url: "/grocery",
     submenu: [
       {
         title: "Pulses",
@@ -68,7 +69,7 @@ const navItems = [
   },
   {
     title: "Go for Wheat!",
-    url: "/goForWheat",
+    // url: "/goForWheat",
   },
   {
     title: "Contact Us",
@@ -78,10 +79,10 @@ const navItems = [
     title: "About Us",
     url: "/About",
   },
-  {
-    title: "Wholesale Enquiry",
-    url: "/wholesaleEnquiry",
-  },
+  // {
+  //   title: "Wholesale Enquiry",
+  //   url: "/wholesaleEnquiry",
+  // },
 ];
 
 const Navbar = () => {

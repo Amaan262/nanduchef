@@ -2,7 +2,7 @@
 import Slider from '../../Components/Slider/Slider';
 import Products from '../../Components/Products/Products';
 import {
-  namkeen1, namkeen2, namkeen3, namkeen4, namkeen5, namkeen6, namkeen7, slider1, slider2
+  heengmix, attacookies, attacookies2, plumcake
 } from '../../Images/images'
 
 
@@ -23,7 +23,7 @@ export default Home
 const slider_Items = [
   {
     id: 1,
-    img: `${slider1}`,
+    img: attacookies,
     title: 'Cookies',
     desc: "Twin Badam Cookies",
     bg: 'e19f6c',
@@ -32,7 +32,7 @@ const slider_Items = [
 
   {
     id: 2,
-    img: `${slider2}`,
+    img: attacookies2,
     title: 'Cookies',
     desc: "Twin Badam Cookies",
     bg: 'e19f6c',
@@ -40,7 +40,7 @@ const slider_Items = [
   },
   {
     id: 3,
-    img: `${slider1}`,
+    img: `${attacookies}`,
     title: 'Cookies',
     desc: "Twin Badam Cookies",
     bg: 'e19f6c',
@@ -49,7 +49,7 @@ const slider_Items = [
 
   {
     id: 4,
-    img: `${slider1}`,
+    img: `${attacookies2}`,
     title: 'Cookies',
     desc: "Twin Badam Cookies",
     bg: 'e19f6c',
@@ -64,56 +64,34 @@ const slider_Items = [
 const Product_Items = [
   {
     id: 1,
-    img: `${namkeen1}`,
-    title: 'Namkeen',
-
-    desc: "Its  famous in Mumbai.",
+    img: heengmix,
+    title: 'Heeng Mixture',
+    desc: "Namkeen savoured with Purest Spice of Heeng (Asafetida), the spiciness of Original Red Chilli to Relish the Taste Never Felt. It is no surprise that this delicacy has earned its place as a Confectionery icon, captivating the palates of food enthusiasts around the world.",
     price: '$10'
-
   },
-
   {
     id: 2,
-    img: `${namkeen2}`,
-    title: 'Raja',
-    desc: "NEW ARRIVALS.",
+    img: attacookies2,
+    title: 'Atta Cookies',
+    desc: "",
     price: '$10'
   },
   {
     id: 3,
-    img: `${namkeen3}`,
-    title: 'Heeng Mix',
-    desc: "NEW ARRIVALS.",
-    price: '$10'
+    img: plumcake,
+    title: 'Cakes',
+    desc: "",
   },
   {
     id: 4,
-    img: `${namkeen4}`,
-    title: 'Heeng Mix',
-    desc: "NEW ARRIVALS.",
-    price: '$10'
+    img: attacookies2,
+    title: 'Bakery Biscuits',
+    desc: "",
   },
   {
     id: 5,
-    img: `${namkeen5}`,
-    title: 'Heeng Mix',
-    desc: "NEW ARRIVALS.",
-    price: '$10'
+    img: attacookies2,
+    title: 'Sugar Free Rusk',
+    desc: "",
   },
-  {
-    id: 6,
-    img: `${namkeen6}`,
-    title: 'Heeng Mix',
-    desc: "NEW ARRIVALS.",
-    price: '$10'
-  },
-  {
-    id: 7,
-    img: `${namkeen7}`,
-    title: 'Heeng Mix',
-    desc: "NEW ARRIVALS.",
-    price: '$10'
-  },
-
-
 ]

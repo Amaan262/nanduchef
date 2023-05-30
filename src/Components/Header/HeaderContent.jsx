@@ -1,19 +1,28 @@
-import React from "react";
 import './HeaderContent.scss'
-import logo from "../../Images/nanduchefRound.png";
+import logo from '../../Images/nanduchefRound.png'
 import "./header.scss";
-import { Link } from "react-router-dom";
-import { FavoriteBorderSharp, PersonSharp, RoomSharp, Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Link, useNavigate } from "react-router-dom";
+import { FavoriteBorderSharp, PersonSharp, RoomSharp, Search, ShoppingCartOutlined, Menu } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
 const HeaderContent = () => {
+  // const [search,setSearch] = useState('')
+  const navigate = useNavigate()
+
+
+  const searchOnChangeHandler = (e) => {
+    navigate(`/search?query=${e.target.value}`)
+  }
   return (
     <div className="header_content">
-      <a className="logo" href="/nanduchef">
+      <div className="menubtn">
+        <Menu />
+      </div>
+      <a className="logo" href="/">
         <img src={logo} alt="nandu-chef" />
       </a>
       <div className="search_box">
-        <input type="text" placeholder="Search" />
-        <button>
+        <input type="text" onChange={searchOnChangeHandler} placeholder="Search" />
+        <button type="submit">
           <Search />
         </button>
       </div>
@@ -22,13 +31,13 @@ const HeaderContent = () => {
           <span>Find Our Store</span>
           <RoomSharp />
         </Link>
-        <Link to="#/">
+        <Link to="#">
           <PersonSharp />
         </Link>
         <Link to="#">
           <FavoriteBorderSharp />
         </Link>
-        <Link to="/cart">
+        <Link to="#">
           <Badge badgeContent={4} color="secondary" overlap="rectangular">
             <ShoppingCartOutlined />
           </Badge>

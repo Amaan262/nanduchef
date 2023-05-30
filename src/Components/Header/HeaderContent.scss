@@ -9,7 +9,15 @@
             width: 65px;
         }
     }
-
+    
+    //mobile menu
+    .menubtn{
+        svg{
+            font-size: 30px;
+            color: $main-color2;
+        }
+       
+    }
     .search_box {
         max-width: 500px;
         background-color: white;

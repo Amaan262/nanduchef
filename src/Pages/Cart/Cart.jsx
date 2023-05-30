@@ -1,6 +1,6 @@
 import './cart.scss'
 import {
-    namkeen1, namkeen2,
+    biji, makhanamix,
 } from '../../Images/images'
 
 import styled from 'styled-components'
@@ -105,15 +105,15 @@ const cart_Items = [
     {
         id: 1,
         name: 'Biji',
-        img: namkeen1,
+        img: biji,
         price: 30,
         qty: 2,
         weight: '500g'
     },
     {
         id: 2,
-        name: 'Namkeen',
-        img: namkeen2,
+        name: 'Makhanamix',
+        img: makhanamix,
         price: 30,
         qty: 3,
         weight: '500g'

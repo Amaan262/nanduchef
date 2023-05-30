@@ -8,10 +8,11 @@ const Products = (props) => {
             <h1>{props.title}</h1>
             <div className="products_wrapper">
                 {
-                    props.ProductItems?.map((item) => {
+                    props.ProductItems?.map((item, index) => {
                         return (
                             <Product
-                                key={item.id}
+                                key={index}
+                                id={item.id}
                                 img={item.img}
                                 title={item.title}
                                 price={item.price}
@@ -19,7 +20,6 @@ const Products = (props) => {
                             />
                         )
                     })
-
                 }
             </div>
 
@@ -28,3 +28,5 @@ const Products = (props) => {
 }
 
 export default Products
+
+
