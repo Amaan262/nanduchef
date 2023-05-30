@@ -3,5 +3,209 @@
 .page_header {
     padding: 0 2%;
     background-color: white;
+    width: 100%;
+    position: relative;
+    // overflow-x: hidden;
+    .header_content {
+        padding: 5px 1%;
+        min-height: 65px;
+        @include flex(center, space-between);
 
+
+        .logo {
+            img {
+                width: 65px;
+
+                @include mobile {
+                    width: 50px;
+                }
+            }
+        }
+
+
+
+        .search_box {
+            max-width: 500px;
+            background-color: white;
+            @include flex(center, center);
+            width: 100%;
+            // border-radius: 6px;
+            height: 40px;
+            border-bottom: $main-color2 1px solid;
+
+            @include mobile {
+                width: 38%;
+            }
+
+            input {
+                // border-radius: 6px;
+                width: 100%;
+                border: none;
+                font-size: 16px;
+                outline: none;
+                padding-left: 10px;
+
+                // ::placeholder {
+                //     color: $main-color2;
+                //     font-size: 500px;
+                // }
+                ::placeholder {
+                    color: $main-color2;
+                    font-size: 30px;
+                    background-color: pink;
+                }
+            }
+
+            button {
+                border: 0;
+                outline: none;
+                background-color: white;
+                padding-right: 10px;
+
+                .icon {
+                    font-size: 20px;
+                    color: $main-color2;
+                }
+            }
+        }
+
+        .quick_links {
+            @include flex(center, center);
+            gap: 20px;
+            font-family: $font-family2;
+            color: $main-color2;
+            font-weight: bold;
+            font-size: 18px;
+
+            @include mobile {
+                font-size: 14px;
+                gap: 10px;
+            }
+
+            span {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            a {
+                @include flex(center, center);
+                gap: 10px;
+                align-self: center;
+                margin-right: 100px;
+
+                @include mobile {
+                    margin-right: 0;
+                    gap: 5px;
+                }
+
+                svg {
+                    font-size: 25px;
+
+                    @include mobile {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            //mobile menu
+
+            .menubtn {
+                display: none;
+
+                svg {
+                    font-size: 30px;
+                    color: $main-color2;
+                }
+
+                @include mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+    // navbar starts here
+
+    .header-nav {
+
+        background-color: white;
+        width: 100%;
+        font-family: $font-family2;
+        position: relative;
+        perspective: 1000;
+        @include mobile {
+
+            // left: 0;
+            z-index: 100;
+            // display: none;
+
+            // &.active {
+            //     display: block;
+            //     position: absolute;
+
+            // }
+        }
+
+
+
+        ul {
+            @include flex(center, center);
+            flex-direction: row;
+            gap: 40px;
+            background-color: white;
+            // display: none;
+            @include mobile {
+                gap: 10px;
+                position: absolute;
+                width: 100%;
+                font-size: 1.4rem;
+                top: 0;
+                right: -500%;
+                z-index: 2000;
+                flex-direction: column;
+                transition: 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                box-shadow: $box-shadow2;
+
+                &.active {
+                    right: 0;
+
+                }
+            }
+
+            li {
+                padding: 2px 4px;
+                font-weight: bold;
+                color: $main-color2;
+                font-size: 18px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 0;
+                    transition: width 0.3s ease;
+                    height: 3px;
+                    background-color: $white;
+                }
+
+                &.active::after,
+                &:hover::after {
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+
+                &:hover {
+                    color: $hover-font;
+                }
+            }
+
+        }
+    }
 }

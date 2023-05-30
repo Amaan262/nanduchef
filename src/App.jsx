@@ -43,7 +43,6 @@ function App() {
         <Route path="/search" element={<Search/>} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
-      {/* <Search /> */}
       <Footer />
       {/* <Register /> */}
 
