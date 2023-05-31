@@ -9,6 +9,7 @@ const Image = styled.div`
     height: 100%;
     background: url(${props => props.img});
     background-size: cover;
+    background-size: ${props => props.backgroundSize ? props.backgroundSize : 'cover'};
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -17,22 +18,50 @@ const Image = styled.div`
 
 const Slider = (props) => {
     const [slideIndex, setSlideIndex] = useState(0);
+    const [slideWidth, setSlideWidth] = useState('');
+    const [isMobile, setIsMobile] = useState(false);
+
+    // choose the screen size 
+    // const handleResize = () => {
+    //     if (window.innerWidth <= 700) {
+    //         // setIsMobile(true)
+    //         setSlideWidth('100')
+    //         console.log('mobile')
+    //         console.log(slideWidth)
+    //     } else {
+    //         setSlideWidth('50')
+    //         console.log('tablet')
+    //         console.log(slideWidth)
+    //     }
+    // }
+
     const wrapperstyle = {
-        transform: `translateX(${slideIndex * -50}vw)`,
+        transform: `translateX(${slideIndex * - slideWidth}vw)`,
     }
     const handleClick = (direction) => {
         if (direction === 'left') {
             setSlideIndex(slideIndex > 0 ? slideIndex - 1 : props.slideItems.length - 1)
         } else {
-            setSlideIndex(slideIndex < props.slideItems.length - 2 ? slideIndex + 1 : 0)
+            setSlideIndex(slideIndex < props.slideItems.length - (isMobile? 1 : 2) ? slideIndex + 1 : 0)
         }
     }
     useEffect(() => {
+        if (window.innerWidth <= 700) {
+            setSlideWidth('100')
+            setIsMobile(true)
+        }
+        else {
+            setSlideWidth('50')
+            setIsMobile(false)
+        }
+
+
+        // window.addEventListener("resize", handleResize)
         const interval = setInterval(() => {
-            setSlideIndex(slideIndex < props.slideItems.length - 2 ? slideIndex + 1 : 0)
+            setSlideIndex(slideIndex < props.slideItems.length - (isMobile? 1 : 2) ? slideIndex + 1 : 0)
         }, 4000);
         return () => clearInterval(interval);
-    }, [props.slideItems.length, slideIndex])
+    }, [props.slideItems.length, slideIndex,isMobile])
 
 
     return (
@@ -47,7 +76,7 @@ const Slider = (props) => {
                         <div className="slide" key={item.id} style={{ backgroundColor: `#${item.bg}` }} >
                             <div className="image-container">
                                 {/* <img src={item.img} alt="nothing" /> */}
-                                <Image img={item.img} />
+                                <Image img={item.img} backgroundSize={item.backgroundSize} />
 
                             </div>
                             {/* <div className="info-container">

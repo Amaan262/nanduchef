@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import {
-    heengmix, aloobhujia, biji, bikaneribhujia, makhanamix, raja, dalmoth, moongdal,
+    heengmix, aloobhujia, biji, bikaneribhujia, makhanamix, raja, dalmoth, moongdal,specialmix
 } from '../../Images/images'
 import Products from '../Products/Products'
 import {
@@ -98,6 +98,13 @@ const Search_Items = [
         price: `$10`
     },
 
+    {
+        id: 9,
+        img: specialmix,
+        title: 'Special Mixture',
+        desc: "The Crispy Sev, crunchy peanuts, or spicy mixture it offersan explosion of taste that leaves a lasting impression on your palate.The perfect balance of spices, the precise frying techniques, and the artful mixing of ingredients create a symphony of flavors that dance on your taste buds. Their savory flavors, enticing textures, and cultural significance make them a treasured culinary gem. So, go ahead and savor the magic of Special Mixture , allowing yourself to indulge in the joyous symphony of taste that they offer.",
+        price: '$10'
+      },
     {
         id: 1,
         img: majestycake,

@@ -1,4 +1,5 @@
 import heengmix from './NamkeenImg/heengmix.jpg';
+import specialmix from './NamkeenImg/special.jpg';
 import aloobhujia from './NamkeenImg/aloobhujia.jpg';
 import biji from './NamkeenImg/biji.jpg';
 import bikaneribhujia from './NamkeenImg/bikaneribhujia.jpg'
@@ -37,10 +38,11 @@ import trufflepastry from './CakesImg/trufflepastry.png'
 import valentinecake from './CakesImg/valentinecake.png'
 import waffles from './CakesImg/waffles.png'
 import weddingrose from './CakesImg/weddingrose.jpg'
-
+import contact from './contact.png'
 export {
+    contact,
     heengmix, aloobhujia, biji, bikaneribhujia, makhanamix, raja,
-    moongdal, dalmoth,
+    moongdal, dalmoth, specialmix,
     attacookies, attacookies2,
     plumcake, brownies, cake1, candycake, circuscake, dearcake, dearcake2, flowercake, flowercake2, flowercake3, flowercake4, glazecake, goldenblackforest, haldicake, heartcake, majestycake, mangomousse, minecake, mousse, paintingcake, shahithandai, soulcake, spidermancake, springcake, strawberrycake, trufflepastry, valentinecake, waffles, weddingrose
 }

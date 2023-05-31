@@ -70,12 +70,12 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="header-nav"  >
-        <ul ref={header__nav}>
+      <nav className="header__nav"  >
+        <ul ref={header__nav} className="navbar">
           {navItems.map((item, index) => {
             return (
               <li className="nav-items" key={index}>
-                <Link onClick={handleLinks} to={item.url}>{item.title}</Link>
+                <Link className={item.class} onClick={handleLinks} to={item.url}>{item.title}</Link>
               </li>
             );
           })}
@@ -96,6 +96,7 @@ const navItems = [
   {
     title: "Home",
     url: "/",
+    class: "active",
   },
 
   {

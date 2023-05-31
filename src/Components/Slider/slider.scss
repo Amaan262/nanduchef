@@ -1,3 +1,4 @@
+@use './scss/' as *;
 .slider-container {
     width: 100%;
     // padding: 20px 0;
@@ -39,8 +40,9 @@
         display: flex;
         transform: translateX(0vw);
         transition: all 1.5s ease;
-        gap: 10px;
-        margin: 0 10px;
+        gap: .1rem;
+        // margin: 0 10px;
+        background-color: $main-color2;
 
         .slide {
             display: flex;
@@ -51,6 +53,10 @@
                 width: 50vw;
                 height: 470px;
 
+                @include mobile {
+                    width: 100vw;
+                    height: 39rem;
+                }
 
                 // flex: 1;
 
@@ -63,7 +69,7 @@
 
             .info-container {
                 flex: 1;
-                padding: 50px;
+                // padding: 50px;
 
                 .title {
                     font-size: 70px;

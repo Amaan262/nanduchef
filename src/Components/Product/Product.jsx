@@ -69,7 +69,7 @@ const Product = (props) => {
                         </div>
                     </div>
                     <div className="back">
-                        <h2>{props.title}</h2>
+                        <h1>{props.title}</h1>
                         <span className='desc'>
                             {props.desc}
                         </span>

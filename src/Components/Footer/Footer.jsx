@@ -6,25 +6,26 @@ const Footer = () => {
       <div className="footer_content">
         {/* <p className="title">Nandu Chef</p> */}
         <div className="footer_container">
+
           <div className="products">
             <p className="footer_sub_head">Top Products</p>
             <ul>
               <li>
                 {" "}
-                <a href="#hero">
-                  <i className="fas fa-chevron-circle-right"></i> Product 1
+                <a href="confectionery">
+                  <i className="fas fa-chevron-circle-right"></i> Namkeen
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="#hero">
-                  <i className="fas fa-chevron-circle-right"></i> Product 2
+                <a href="livebakery">
+                  <i className="fas fa-chevron-circle-right"></i> Cakes
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="#hero">
-                  <i className="fas fa-chevron-circle-right"></i> Product 3
+                <a href="livebakery">
+                  <i className="fas fa-chevron-circle-right"></i> Pastry
                 </a>
               </li>
             </ul>
@@ -48,23 +49,26 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="bakeryBiscuits">
-                  <i className="fas fa-chevron-circle-right"></i> Bakery
-                  Biscuits
-                </a>
-              </li>
-              <li>
                 <a href="liveBakery">
                   <i className="fas fa-chevron-circle-right"></i> Live Bakery
                 </a>
               </li>
               <li>
-                <a href="grocery">
+                <a href="/#">
+                  {/* <a href="bakeryBiscuits"> */}
+                  <i className="fas fa-chevron-circle-right"></i> Bakery
+                  Biscuits
+                </a>
+              </li>
+              <li>
+                <a href="/#">
+                  {/* <a href="grocery"> */}
                   <i className="fas fa-chevron-circle-right"></i> Grocery
                 </a>
               </li>
               <li>
-                <a href="goForWheat">
+                <a href="/#">
+                  {/* <a href="goForWheat"> */}
                   <i className="fas fa-chevron-circle-right"></i> Go For Wheat!
                 </a>
               </li>
@@ -73,14 +77,15 @@ const Footer = () => {
                   <i className="fas fa-chevron-circle-right"></i> Contact Us
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="wholesaleEnquiry">
                   <i className="fas fa-chevron-circle-right"></i> Wholesale
                   Enquiry
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
+
           <div className="social">
             <h3 className="footer_sub_head">Contact Info</h3>
             <div className="contactInfo">

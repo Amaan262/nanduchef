@@ -2,10 +2,13 @@
 
 .about {
     height: 100%;
+    width: 100%;
+    overflow: hidden;
 
     h1 {
-        font-size: 2rem;
-        padding: 20px 0;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        padding: 2rem 0;
         font-weight: 600;
         color: $premium;
         text-align: center;
@@ -16,19 +19,31 @@
     padding: 10px 0;
 
     .container {
+        display: flex;
+        flex-direction: column;
         padding: 2rem 0;
+        gap: 3rem;
 
         // background-color: white;
         .box {
-            background-color: #e4c2996c;
+            background-color: #f0ca9d6c;
             color: $premium;
             font-weight: 550;
-            margin: 3rem 10rem;
+            margin: 3rem 5rem;
             height: 100%;
-            height: 300px;
             box-shadow: $box-shadow;
             display: flex;
             align-items: center;
+
+            .info {
+                padding: 0 1rem;
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 800;
+                    margin-bottom: 1rem;
+                }
+            }
 
             &:hover {
                 transform: scale(1.01);
@@ -36,13 +51,55 @@
             }
 
             p {
-                font-size: 25px;
+                font-size: 2rem;
                 margin: 0 20px;
                 font-family: $font-family2;
+
             }
 
             img {
                 box-shadow: $box-shadow4;
+            }
+
+
+            @include tablet {
+                flex-direction: column;
+                margin: 3rem 2rem;
+                padding: 1rem 0;
+                text-align: center;
+
+                .info {
+                    padding: 0;
+
+                    h3 {
+                        font-size: 2rem;
+                        font-weight: 800;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 0 20px;
+                    font-family: $font-family2;
+
+                }
+            }
+        }
+
+        .box1 {
+            img {
+                width: 350px;
+                transform: translate(-20px, -40px);
+
+                @include tablet {
+
+                    width: 300px;
+                    height: 200px;
+                    transform: translate(0px, -30px);
+
+                }
+
             }
         }
 
@@ -52,21 +109,34 @@
             img {
                 width: 300px;
                 transform: translate(30px, -30px);
+
             }
+
+            @include tablet {
+                img {
+                    width: 300px;
+                    height: 200px;
+                    transform: translate(0px, -30px);
+                }
+                flex-direction: column;
+            }
+
 
         }
 
-        .box1 {
-            img {
-                width: 350px;
-                transform: translate(-20px, -40px);
-            }
-        }
+
 
         .box3 {
             img {
                 width: 400px;
                 transform: translate(-30px, -40px);
+            }
+            @include tablet {
+                img {
+                    width: 300px;
+                    height: 200px;
+                    transform: translate(0px, -30px);
+                }
             }
         }
     }
